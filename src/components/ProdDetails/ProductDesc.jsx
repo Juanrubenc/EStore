@@ -5,6 +5,8 @@ import SimilarProducts from './SimilarProducts'
 
 const ProductDesc = ({ productInfo }) => {
 
+
+
     const [counter, setCounter] = useState(1)
     const handlePlus = () => setCounter(counter + 1)
     const handleMinus = () => {

@@ -15,14 +15,16 @@ const SimilarProducts = ({productInfo}) => {
     }
   }, [productInfo])
 
-  console.log(filterproducts)
+
+
+
 
   return (
     <div className='similar-products'>
       {
         filterproducts?.map(product =>{
           if(product.title !== productInfo.title){
-            return (
+            return (               
               <ProductsCard
               key={product.id}
               product={product}/>
