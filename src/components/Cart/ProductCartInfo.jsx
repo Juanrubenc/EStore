@@ -4,6 +4,9 @@ import getConfig from '../../utils/getConfig'
 
 const ProductCartInfo = ({product, getAllProductsCart}) => {
 
+  const handleClick = () => {
+    navigate (`/products/${product.id}`)
+  }
 
 
   const handleDeleteProduct = () => {

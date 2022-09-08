@@ -8,7 +8,7 @@ const ProductsCard = ({product}) => {
 
     const navigate = useNavigate()
 
-    const handleClick = e => {
+    const handleClick = () => {
       navigate (`/products/${product.id}`)
     }
 
@@ -24,6 +24,8 @@ const ProductsCard = ({product}) => {
           .then(res => console.log(res.data))
           .catch(err => console.log(err))
       }
+
+      console.log(product)
 
   return (
     <article onClick={handleClick} className='card-home'>
