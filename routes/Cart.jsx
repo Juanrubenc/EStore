@@ -22,6 +22,8 @@ const Cart = () => {
     const cartTotal = cartProducts?.reduce((acc, cv) => {
         return acc + (cv.price) * (cv.productsInCart.quantity)
     }, 0)
+    
+    //Cambios
 
 
     const handleCheckOut = () => {
