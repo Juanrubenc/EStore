@@ -5,6 +5,7 @@ import ProductCartInfo from '../Cart/ProductCartInfo'
 import getConfig from '../../utils/getConfig'
 
 const Cart = () => {
+    // final
 
     const [cartProducts, setCartProducts] = useState()
 
