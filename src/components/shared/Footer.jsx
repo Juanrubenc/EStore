@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Styles/footer.css"
-import T from '/Users/juanruben/Documents/react2.1/ecommerce/src/assets/T.svg'
+
 
 
 
@@ -8,7 +8,7 @@ import T from '/Users/juanruben/Documents/react2.1/ecommerce/src/assets/T.svg'
 const footer = () => {
   return (
     <div className='footer'>
-    <img src={T} className="logo-dinosaurio" alt="React logo" />
+                    <h1 className='page-tittle'>Zap-Store <i class="fa-solid fa-bolt"></i></h1>
     <div className='info'>
     <p>© 2022 Juan Ruben Castaneda</p>
     <p className='info'>Academlo</p>
