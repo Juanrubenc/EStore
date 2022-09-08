@@ -8,7 +8,7 @@ const ProductCartInfo = ({product, getAllProductsCart}) => {
 
   const handleDeleteProduct = () => {
     const URL = `https://ecommerce-api-react.herokuapp.com/api/v1/cart/${product.id}`
-    axios.delete(URL, getConfig())
+    axios.delete(URL, getConfig)
       .then(() => getAllProductsCart())
       .catch(err => console.log(err))
   }
