@@ -20,7 +20,7 @@ const ProductsCard = ({product}) => {
           id: product.id,
           quantity: 1
         }
-        axios.post(URL, obj, getConfig())
+        axios.post(URL, obj, getConfig)
           .then(res => console.log(res.data))
           .catch(err => console.log(err))
       }
