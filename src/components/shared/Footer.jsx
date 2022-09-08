@@ -6,7 +6,7 @@ const footer = () => {
     <div className='footer'>
       <h1 className='page-tittle'>Zap-Store <i class="fa-solid fa-bolt"></i></h1>
     <div className='info'>
-    <p>© 2022 Juan Ruben Castaneda</p>
+    <p>© 2022 Juan Castaneda</p>
     <p className='info'>Academlo</p>
     </div>
     <a href="https://github.com/Juanrubenc/EStore">

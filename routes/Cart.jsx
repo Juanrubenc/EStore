@@ -2,19 +2,22 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import ProductCartInfo from '../Cart/ProductCartInfo'
-import getConfig from '../../utils/getConfig'
+import getConfig from '../src/utils/getConfig'
 
 const Cart = () => {
 
     const [cartProducts, setCartProducts] = useState()
 
-    useEffect(() => {
+    const getAllProductsCart = () => {
         const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/cart'
         axios.get(URL, getConfig)
-            .then(res => setCartProducts(res.data.data.cart.products))
-            .catch(err => setCartProducts())
-    }, [])
-
+          .then(res => setCartProducts(res.data.data.cart.products))
+          .catch(err => setCartProducts())
+      }
+    
+      useEffect(() => {
+        getAllProductsCart()
+      }, [])
 
     const cartTotal = cartProducts?.reduce((acc, cv) => {
         return acc + (cv.price) * (cv.productsInCart.quantity)
@@ -30,7 +33,7 @@ const Cart = () => {
             city: "Monterrey",
             references: "Some references"
         }
-        axios.post(URL, obj, getConfig())
+        axios.post(URL, obj, getConfig)
             .then(res => console.log(res.data))
             .catch(err => console.log(err))
     }
