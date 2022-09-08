@@ -8,11 +8,7 @@ import "./Styles/footer.css"
 const footer = () => {
   return (
     <div className='footer'>
-<<<<<<< HEAD
-      <h1 className='page-tittle'>Zap-Store <i class="fa-solid fa-bolt"></i></h1>
-=======
                     <h1 className='page-tittle'>Zap-Store <i class="fa-solid fa-bolt"></i></h1>
->>>>>>> b5366fcbeeadac2f9ebadcdfd4595d1d0b7c96cf
     <div className='info'>
     <p>© 2022 Juan Ruben Castaneda</p>
     <p className='info'>Academlo</p>
