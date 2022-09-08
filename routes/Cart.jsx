@@ -23,7 +23,6 @@ const Cart = () => {
         return acc + (cv.price) * (cv.productsInCart.quantity)
     }, 0)
 
-
     const handleCheckOut = () => {
         const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/purchases'
         const obj = {
