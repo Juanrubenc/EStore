@@ -1,13 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import T from '/Users/juanruben/Documents/react2.1/ecommerce/src/assets/T.svg'
+
 
 const Headers = () => {
     return (
         <header className='header'>
             <NavLink to='/'>
                 <a href="/" target="_blank">
-                    <img src={T} className="logo-dinosaurio" alt="React logo" />
+                    <h1>E-Store</h1>
                 </a>
             </NavLink>
             <nav className="header__nav">
